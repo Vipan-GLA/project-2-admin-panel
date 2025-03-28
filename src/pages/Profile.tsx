@@ -51,8 +51,8 @@ export default function Profile() {
 
   // Generate Kit Token & Start Meeting
   const startVideoCall = async (orderId: string) => {
-    const appID = 2118052849; // 🔹 Replace with your App ID
-    const serverSecret = "59d3476834a436035eccb100c5189daf"; // 🔹 Replace with your Secret Key
+    const appID = 372322544; // 🔹 Replace with your App ID
+    const serverSecret = "eecd4ed18dd57b654d7296f0b9a9520b"; // 🔹 Replace with your Secret Key
     const userID = user?.uid || `guest_${Math.floor(Math.random() * 1000)}`;
     const userName = user?.displayName || "Guest";
 
