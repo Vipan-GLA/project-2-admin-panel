@@ -48,9 +48,8 @@ export default function FoodCard({ id, name, price, description, image, category
           className="absolute top-4 right-4 p-2 rounded-full bg-white/80 hover:bg-white transition-colors"
         >
           <Heart
-            className={`h-5 w-5 ${
-              isFavorite(id) ? 'fill-red-500 text-red-500' : 'text-gray-600'
-            }`}
+            className={`h-5 w-5 ${isFavorite(id) ? 'fill-red-500 text-red-500' : 'text-gray-600'
+              }`}
           />
         </button>
         <div className="absolute top-4 left-4">
@@ -65,12 +64,12 @@ export default function FoodCard({ id, name, price, description, image, category
           <span className="text-lg font-bold text-blue-600">${price}</span>
         </div>
         <p className="text-gray-600 text-sm mb-4 line-clamp-2">{description}</p>
-        <button
+        {/* <button
           onClick={handleAddToCart}
           className="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition-colors"
         >
           Add to Cart
-        </button>
+        </button> */}
       </div>
     </div>
   );

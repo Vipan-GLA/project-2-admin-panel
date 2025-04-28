@@ -34,15 +34,12 @@ export default function Navbar() {
                 >
                   <UserIcon className="h-6 w-6" />
                 </Link>
-                <Link to="/cart" className="text-gray-600 hover:text-gray-900">
-                  <div className="relative">
-                    <ShoppingCart className="h-6 w-6" />
-                    {items.length > 0 && (
-                      <span className="absolute -top-2 -right-2 bg-red-500 text-white rounded-full w-5 h-5 flex items-center justify-center text-xs">
-                        {items.length}
-                      </span>
-                    )}
-                  </div>
+
+                <Link
+                  to="/addfood"
+                  className="text-gray-600 hover:text-gray-900 bg-red-300 rounded-md p-2"
+                >
+                  Add More Items
                 </Link>
                 <button
                   onClick={handleLogout}

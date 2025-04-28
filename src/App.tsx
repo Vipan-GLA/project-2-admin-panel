@@ -11,6 +11,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Profile from './pages/Profile';
 import PrivateRoute from './components/PrivateRoute';
+import UploadFoodItemForm from './pages/UploadFoodItemForm';
 
 function App() {
   return (
@@ -25,22 +26,22 @@ function App() {
                   <Route path="/" element={<Home />} />
                   <Route path="/login" element={<Login />} />
                   <Route path="/signup" element={<Signup />} />
-                  <Route
+                  {/* <Route
                     path="/cart"
                     element={
                       <PrivateRoute>
                         <Cart />
                       </PrivateRoute>
                     }
-                  />
-                  <Route
+                  /> */}
+                  {/* <Route
                     path="/checkout"
                     element={
                       <PrivateRoute>
                         <Checkout />
                       </PrivateRoute>
                     }
-                  />
+                  /> */}
                   <Route
                     path="/profile"
                     element={
@@ -49,6 +50,7 @@ function App() {
                       </PrivateRoute>
                     }
                   />
+                  <Route path="/addfood" element={<UploadFoodItemForm />} />
                 </Routes>
               </main>
             </div>
